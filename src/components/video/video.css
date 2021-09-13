@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
   margin: 0 0.5em;
+  transition: transform 250ms ease-in;
+}
+
+.video:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .video__thumbnail {

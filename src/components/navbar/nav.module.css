@@ -6,6 +6,7 @@
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: var(--point-color);
 }
 
 .left,
@@ -33,7 +34,14 @@ button {
   font-size: 1rem;
   border-style: none;
   border-radius: 1rem;
-  background-color: black;
+  background-color: var(--content-color);
   color: white;
   margin-right: 1.3em;
+}
+
+#bars:hover,
+#youtube:hover,
+#search:hover,
+button:hover {
+  cursor: pointer;
 }
