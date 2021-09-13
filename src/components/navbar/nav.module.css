@@ -1,0 +1,39 @@
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  padding: 0 1em;
+  box-sizing: border-box;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  justify-content: end;
+}
+
+#bars,
+#youtube {
+  margin-left: 1em;
+}
+
+#search {
+  margin-right: 0.8em;
+}
+
+button {
+  width: 4em;
+  height: 2.5em;
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+  margin-right: 1.3em;
+}

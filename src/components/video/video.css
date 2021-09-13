@@ -1,0 +1,21 @@
+.video {
+  width: 15em;
+  height: 15em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5em;
+}
+
+.video__thumbnail {
+  width: 15em;
+  height: 10em;
+}
+
+.video__title {
+  margin: 0.5em 0;
+}
+
+.video__channelTitle {
+  font-size: 0.9rem;
+}
