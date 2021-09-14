@@ -24,17 +24,41 @@
   margin-left: 1em;
 }
 
-#search {
-  margin-right: 0.8em;
+input {
+  width: 15em;
+  height: 2.2em;
+  padding: 1em 0 1em 0.5em;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--content-color);
 }
 
-button {
+input:focus {
+  outline: none;
+  color: var(--point-color);
+}
+
+#search {
+  margin-right: 1.3rem;
+  border: none;
+  background-color: transparent;
+  width: 1.5em;
+  height: 2em;
+  font-size: 2rem;
+  color: var(--point-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join,
+.login {
   width: 4em;
   height: 2.5em;
   font-size: 1rem;
   border-style: none;
   border-radius: 1rem;
-  background-color: var(--content-color);
+  background-color: var(--black);
   color: white;
   margin-right: 1.3em;
 }
