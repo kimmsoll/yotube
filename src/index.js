@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 import App from './app';
+import Youtube from './service/youtube';
+
+const youtube = new Youtube();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App youtube={youtube}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
