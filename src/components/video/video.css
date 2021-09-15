@@ -1,6 +1,6 @@
 .video {
   width: 15em;
-  height: 15em;
+  height: 17em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -14,8 +14,8 @@
 }
 
 .video__thumbnail {
-  width: 15em;
-  height: 10em;
+  width: 15rem;
+  height: 10rem;
 }
 
 .video__title {

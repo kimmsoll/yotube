@@ -3,6 +3,7 @@
   margin: 0;
   padding: 5em;
   box-sizing: border-box;
+  background-color: var(--content-color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(18em, auto);

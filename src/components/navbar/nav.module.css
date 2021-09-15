@@ -1,9 +1,11 @@
 .navbar {
   width: 100vw;
   height: 10vh;
+  min-height: 5rem;
   padding: 0 1em;
   box-sizing: border-box;
   font-size: 2rem;
+  border-bottom: 0.1rem solid var(--gray);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--point-color);
@@ -36,6 +38,7 @@ input {
 input:focus {
   outline: none;
   color: var(--point-color);
+  border: 0.01px solid var(--dark-mint);
 }
 
 #search {
