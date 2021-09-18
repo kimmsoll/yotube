@@ -1,2 +1,20 @@
 @import '../src/components/videoList/video_list.css';
 @import '../src/components/video/video.css';
+
+.contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.grid {
+  width: 100%;
+  padding: 5em;
+  box-sizing: border-box;
+}
+
+.list > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
