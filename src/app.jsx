@@ -14,8 +14,11 @@ function App({youtube}){
   }
 
   const search = query => {
+    setSelectedVideo(null);
     youtube.search(query)
-      .then(items => setVideos(items))
+      .then(items => {
+        setVideos(items);
+      })
       .catch(error => console.log('error', error));
   }
 
@@ -27,20 +30,19 @@ function App({youtube}){
 
   return (
     <>
-      <Nav onSearch={search}></Nav>
-      {selectedVideo && 
-      <div className="contents">
+    <Nav onSearch={search}></Nav>
+    {selectedVideo ? 
+      (<div className="contents">
       <section className="grid">
         <VideoDetail video={selectedVideo}/>
       </section>
       <section className="list">
         <VideoList videos={videos} onClick={selectVideo}></VideoList>
       </section>
-      </div>
-      }
-      {!selectedVideo &&
-      <VideoList videos={videos} onClick={selectVideo}></VideoList>
-      }
+      </div>)
+    :
+      (<VideoList videos={videos} onClick={selectVideo}></VideoList>)
+    }
     </>
   );
 }
