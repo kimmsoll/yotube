@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useEffect, useState } from 'react';
 import './app.css';
 import Nav from "./components/navbar/nav";
@@ -13,20 +13,18 @@ function App({youtube}){
     setSelectedVideo(video);
   }
 
-  const search = query => {
+  const search = useCallback(query => {
     setSelectedVideo(null);
     youtube.search(query)
-      .then(items => {
-        setVideos(items);
-      })
+      .then(items => setVideos(items))
       .catch(error => console.log('error', error));
-  }
+  }, [youtube]);
 
   useEffect(() => {
     youtube.trending()
     .then(result => setVideos(result.items))
     .catch(error => console.log('error', error));
-  },[])
+  },[youtube]);
 
   return (
     <>

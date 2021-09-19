@@ -9,4 +9,9 @@
 
 .description {
   font-size: 1.2rem;
+  white-space: pre-wrap;
+}
+
+.date {
+  font-size: 1.1rem;
 }

@@ -10,17 +10,18 @@ const VideoDetail = ({ video }) => {
     return(
         <>
         <iframe
-        id="ytplayer"
         type="text/html"
         width="100%"
         height="500px"
+        title="youtube video player"
         src={`https://www.youtube.com/embed/${video.id}`}
         frameBorder="0"
         allowFullScreen>
         </iframe>
         <h1 className={styles.title}>{video.snippet.title}</h1>
         <h3 className={styles.channelTitle}>{video.snippet.channelTitle}</h3>
-        <span className={styles.description}>{video.snippet.description}</span>
+        <pre className={styles.description}>{video.snippet.description}</pre>
+        <span className={styles.date}>{video.snippet.publishedAt}</span>
         </>
     )
 }

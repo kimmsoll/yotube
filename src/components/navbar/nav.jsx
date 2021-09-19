@@ -1,7 +1,7 @@
-import { useRef } from "react";
+import { memo, useRef } from "react";
 import styles from "./nav.module.css";
 
-const Nav = ({onSearch}) => {
+const Nav = memo(({onSearch}) => {
     const inputRef = useRef();
 
     const handleSearch = () => {
@@ -36,6 +36,6 @@ const Nav = ({onSearch}) => {
         </header>
         </>
     );
-}
+});
 
 export default Nav;

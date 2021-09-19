@@ -1,4 +1,6 @@
-const Video = (props) => {
+import { memo } from "react";
+
+const Video = memo((props) => {
     return(
         <li onClick={() => props.onClick(props.video)}>
             <div className="video">
@@ -7,7 +9,7 @@ const Video = (props) => {
                 <span className="video__channelTitle">{props.channelTitle}</span>
             </div>
         </li>
-    );
-}
+    )
+});
 
 export default Video;
